@@ -8,15 +8,6 @@ namespace crossover_challenge {
          */
         static int[] rearrange (int[] elements) {
 
-            elements = new int[] {
-                5,
-                5,
-                3,
-                7,
-                10,
-                14,
-
-            };
             int temp = 0;
             for (int pass = 1; pass <= elements.Length - 2; pass++) {
                 for (int i = 0; i <= elements.Length - 2; i++) {
@@ -41,7 +32,7 @@ namespace crossover_challenge {
                 }
             }
 
-            int?[] res = new int?[count + 1];
+            int[] res = new int[count + 1];
             count = 0;
             for (int i = 0; i < elements.Length - 1; i++) {
                 if (elements[i] != elements[i + 1]) {
